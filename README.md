@@ -4,7 +4,7 @@ The objective of this project was to create a voice based conversational agent w
 The data was preprocessed using different natural language preprocessing techniques like tokenization, stemming, bag of words. Given an input by the user, the chatbot selects one of the closest matching responses by searching for the closest matching statements using Jaccard similarity and uses Naive Bayes classification algorithm to check if the input meets a set of criteria to get a valid response by calculating the likelihood.
 
 
-## We are going to use LSTM with Seq2Seq generation to build the model. 
+### Building model using LSTM with Seq2Seq generation 
 
   •	We use google text to speech recognition apis. 
 
@@ -15,7 +15,7 @@ The data was preprocessed using different natural language preprocessing techniq
   •	It uses a forget gate to filter the amount of past information the LSTM should keep, Input gate, decides which information should be input into the network, Candidate state generates a vector of potential candidate, output of the cell is calculated as a weighted product of influence of the current input and previous hidden state
 
 
-## Two problems emerge for Seq 2 Seq: 
+### Two problems emerge for Seq 2 Seq: 
 
   •	First, SEQ2SEQ models are trained by predicting the next dialogue turn in a given conversational context using the maximum-likelihood estimation (MLE) objective function. However, it is not clear how well MLE approximates the real-world goal of chatbot development: teaching a machine to converse with humans, while providing interesting, diverse, and informative feedback that keeps users engaged.
 
